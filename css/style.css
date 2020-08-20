@@ -177,3 +177,32 @@ anchors are inline so you need ot make them block to go full width
   font-family: Playlist-Caps;
   src: url('/font/Playlist\ Caps.otf') format("opentype");
 }
+
+/* A fix to adjust the card's width */
+.card-img-top {
+  object-fit: cover;
+}
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .card-img-top {
+        height: 19vw;
+    }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .card-img-top {
+        height: 16vw;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 16vw;
+    }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: vw;
+    }
+  }
