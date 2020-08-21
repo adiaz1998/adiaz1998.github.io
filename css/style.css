@@ -157,6 +157,10 @@ anchors are inline so you need ot make them block to go full width
   background-color: #E5E4E2;
 }
 
+.darker{
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
 /* Font */
 @font-face {
   font-family: Bebas-Neue;
