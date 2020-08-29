@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/infinite-slider.css">
-  <title>Home Page</title>
+  <title>Homepage</title>
 </head>
 
 <body>
@@ -59,25 +59,55 @@
         <li class="nav-item">
         <a class="nav-link" href="members.html">Members</a>
        </li>
+       <li class="nav-item">
        <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger navbar-btn" role="button">Join Us</a>
+      </li>
           </ul>
         </div>
       </div>
   </nav>
 
+
 <!-- BANNER -->
+  
 <header>
-  <div class="container-fluid"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="/img/ALPFABanquet.mp4" type="video/mp4">
-  </video>
-  <div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white">
-        <h1 style="font-family:Bebas-Neue;font-size:60px;">ALPFA-RUN</h1>
-        <p class="lead mb-0">Empowering/Developing our Future Leaders for Tomorrow</p>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url(/img/Headerimage2.jpg)">
+        <div class=" carousel-caption d-none d-md-block">
+          <h1 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;"><b>Bienvenidos to the ALPAMILIA</b></h1>
+          <p><b>ALPFA Rutgers-Newark Chapter</b></p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url(/img/headerimage3.jpg)">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;"><b>Empowering Our Future Leaders of Tomorrow</b></h1>
+          <p><b>To Reach Their Full Potential</b></p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url(/img/headerimage4.jpg)">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;"><b>Informing Our Beloved Members of Opportunities</b></h1>
+          <p><b>Essential To Their Career Successl</b></p>
+        </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
   </div>
 </header>
 
@@ -124,28 +154,31 @@
 </div>
 
 <!--MEMBERSHIP BENEFITS-->
-<section class="bg-light">
+<section>
+<hr>
   <div class="container">
     <div class="row">
       <div class="col-md-10 m-auto py-5">
         <h1 style="font-family:Bebas-Neue;font-size:80px;" class="text-center mb-3">Why You Should Join!</h1>
-        <ul class="fa-ul bg-light">
-          <li><span class="fa-li"><i class="fas fa-check-square"></i></span><h5>Build invaluable leadership skills!</h5></li>
-          <li><span class="fa-li"><i class="fas fa-check-square"></i></span><h5>Expand your network with a reputable, critically acclaimed national organization</h5></li>
-          <li><span class="fa-li"><i class="fas fa-check-square"></i></span><h5>Learn soft skills & hard technical skills essential for your future career</h5></li>
-          <li><span class="fa-li"><i class="fas fa-check-square"></i></span><h5>Attend exclusive sessions from our partnered companies</h5></li>
-          <li><span class="fa-li"><i class="fas fa-check-square"></i></span><h5>Scholarship opportunity to go to the ALPFA National Convention (50+ companies seeking to hire candidates!)</h5></li>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i><img src="/img/Icon8 Fonts/icons8-leader-50.png" alt="" class="mr-3"></i>Build invaluable leadership skills!</li>
+          <li class="list-group-item"><i><img src="/img/Icon8 Fonts/icons8-business-network-50.png" alt="" class="mr-3"></i>Expand your network with a reputable, critically acclaimed national organization</li>
+          <li class="list-group-item"><i><img src="/img/Icon8 Fonts/icons8-communication-skill-50.png" alt="" class="mr-3"></i>Learn soft skills & hard technical skills essential for your future career</li>
+          <li class="list-group-item"><i><img src="/img/Icon8 Fonts/icons8-approved-unlock-50.png" alt="" class="mr-3"></i>Attend exclusive sessions from our partnered companies</li>
+          <li class="list-group-item"><i><img src="/img/Icon8 Fonts/icons8-scholarship-50.png" alt="" class="mr-3"></i>Scholarship opportunity to go to the ALPFA National Convention 
+            (50+ companies seeking to hire candidates!)</li>
         </ul>
-        <div class="text-center">
-          <a href="membership benefits.html" class="btn btn-success" role="button">Learn More</a>
+        <div class="text-center mt-5">
+          <a href="membership benefits.html" class="btn btn-danger" role="button">Learn More</a>
         </div>
       </div>
     </div>
   </div>
+<hr>
 </section>
 
 <!-- DONATE -->
-<section class="grey text-white">
+<section class="text-dark">
   <div class="container">
     <div class="row py-4">
       <div class="col-md-6 text-center">
@@ -153,21 +186,25 @@
       </div>
       <div class="col-md-6 m-auto text-center py-2">
         <h1 style="font-family:Playlist-Script;font-size:80px;">Donate Today</h1>
-        <p class="text-light font-italic">Your Donation Is More Than a Donation. It's An Investment</p>
-        <a href="donate.html" class="btn btn-primary" role="button">Donate</a>
+        <p class="font-italic">Your Donation Is More Than a Donation. It's An Investment</p>
+        <a href="donate.html" class="btn btn-success" role="button">Donate</a>
       </div>
     </div>
   </div>
 </section>
+<hr>
 
 
 <!-- Instagram Feed -->
-<section class="bg-light">
+<section>
   <div class="container">
-    <div class="powr-instagram-feed" id="7f8b5e94_1596163746"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+    <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+    <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    <ul class="juicer-feed" data-feed-id="runalpfa" data-per="6"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
       </div>
   </div>
 </section>
+
 
 <!-- Footer -->
 <footer id="main-footer" class="bg-dark text-white pt-4">
@@ -179,13 +216,13 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-4 mx-auto">
+      <div class="col-md-3">
 
         <!-- Content -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ALPFA Rutgers-Newark</h5>
-        <p>Rutgers Business School
-          <br>1 Washington Park, Suite 324
-          <br>Newark, NJ 07102-3122</p>
+        <p><i class="fa fa-university mr-2" aria-hidden="true"></i>Rutgers Business School
+          <br><i class="fa fa-building mr-2" aria-hidden="true"></i>1 Washington Park, Suite 324
+          <br><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Newark, NJ 07102-3122</p>
 
       </div>
 
@@ -194,11 +231,47 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
+      <div class="col-md-3">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Links</h5>
+    <!-- Social buttons -->
+    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Follow us on social media</h5>
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/alpfa-rutgers-newark-334a48158/" role="button">
+          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-linkedin-50.png" alt="" class="trans"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/runalpfa/">
+          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-instagram-50.png" alt="" class="trans"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/runalpfa/">
+          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-facebook-50.png" alt="" class="trans"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.tiktok.com/@runalpfa">
+          <i><img src="img/Icon8 Fonts/SocialMediaIcons/icons8-tiktok-50.png" alt="" class="trans"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
 
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 justify-content-center align-self-center">
+
+        <!-- Links -->
         <ul class="list-unstyled text-center">
           <li>
             <a href="index.html">Home</a>
@@ -215,16 +288,15 @@
         </ul>
 
       </div>
+  
       <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
+      <div class="col-md-3 justify-content-center align-self-center">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Links</h5>
-
         <ul class="list-unstyled text-center">
           <li>
             <a href="donate.html">Donate</a>
@@ -249,51 +321,8 @@
   </div>
   <!-- Footer Links -->
 
-  <hr>
-
-  <!-- Call to action -->
-  <ul class="list-unstyled list-inline text-center py-2">
-    <li class="list-inline-item">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger" role="button">Join Us</a>
-    </li>
-    <li class="list-inline-item">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
-        Contact Us
-      </button>
-    </li>
-  </ul>
-
-  <!-- Call to action -->
-
-  <hr>
-
-   <!-- Social buttons -->
-   <ul class="list-unstyled list-inline text-center">
-    <li class="list-inline-item">
-      <a href="https://www.linkedin.com/in/alpfa-rutgers-newark-334a48158/" class="btn-floating btn-fb mx-1" role="button">
-        <i class="fab fa-linkedin-in"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.instagram.com/runalpfa/" class="btn-floating btn-dribbble mx-1">
-        <i class="fab fa-instagram"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.facebook.com/runalpfa/" class="btn-floating btn-li mx-1">
-        <i class="fab fa-facebook-f"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.youtube.com/channel/UCSmcAcl5HvuQLBnW-gjF25g" class="btn-floating btn-dribbble mx-1">
-        <i class="fab fa-youtube"> </i>
-      </a>
-    </li>
-  </ul>
-  <!-- Social buttons -->
-
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 darker">
+  <div class="footer-copyright text-center py-3 mt-4 darker">
     <p>Copyright &copy; <span id="year"></span><a href="https://mdbootstrap.com/"> MDBootstrap.com</a></p>
   </div>
   <!-- Copyright -->

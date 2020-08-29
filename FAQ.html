@@ -23,6 +23,21 @@
   <link rel="stylesheet" href="css/infinite-slider.css">
   <title>Frequently Asked Questions</title>
 </head>
+<script>
+  $(document).ready(function(){
+      // Add minus icon for collapse element which is open by default
+      $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find("fa").addClass("fa-angle-down").removeClass("fa-angle-right");
+      });
+      
+      // Toggle plus minus icon on show hide of collapse element
+      $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-right");
+      }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-angle-right").addClass("fa-angle-down");
+      });
+  });
+</script>
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -59,7 +74,9 @@
         <li class="nav-item">
         <a class="nav-link" href="members.html">Members</a>
        </li>
-       <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger navbar-btn" role="button">Join Us</a>
+       <li class="nav-item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger navbar-btn" role="button">Join Us</a>
+       </li>
           </ul>
         </div>
       </div>
@@ -68,8 +85,8 @@
 
 <!--Header Title-->
 <section class="blue text-light text-center">
-  <div class="container py-5">
-    <h1 style="font-family:Bebas-Neue;font-size:40px">Frequently Asked Questions</h1>
+  <div class="container py-3">
+    <h1 style="font-family:Bebas-Neue;font-size:80px">Frequently Asked Questions</h1>
   </div>
 </section>
 
@@ -92,7 +109,7 @@
           <a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse1" aria-expanded="true"
             aria-controls="collapse1">
             <h5 class="mb-0 white-text text-uppercase font-thin">
-               Do I have to be Latino to join ALPFA-Rutgers Newark?<i class="fas fa-angle-down rotate-icon"></i>
+              <i class="fas fa-angle-down rotate-icon"></i> Do I have to be Latino to join ALPFA-Rutgers Newark?
             </h5>
           </a>
         </div>
@@ -101,9 +118,9 @@
         <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1"
           data-parent="#accordionEx7">
           <div class="card-body mb-1 rgba-grey-light white-text">
-            <p>Absolutely not! Our organizaition prides itself for its vast diveristy with 30% of our members hailing from 
+            <p>Absolutely not! Our organization prides itself for its vast diveristy with 30% of our members hailing from 
               non-Hispanic backgrounds. Any student of Rutgers-Newark, regardless of their race, creed, nationality, religion,
-               etc. is encouraged to apply & become a part of the ALPFAfamilia!.</p>
+               etc. is encouraged to apply & become a part of the alpfamilia!.</p>
           </div>
         </div>
       </div>
@@ -117,7 +134,7 @@
           <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse2"
             aria-expanded="false" aria-controls="collapse2">
             <h5 class="mb-0 white-text text-uppercase font-thin">
-            Is this club only tailored for Accounting & Finance students?<i class="fas fa-angle-down rotate-icon"></i>
+              <i class="fas fa-angle-down rotate-icon"></i> Is this club only tailored for Accounting & Finance students?</i>
             </h5>
           </a>
         </div>
@@ -126,11 +143,10 @@
         <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2"
           data-parent="#accordionEx7">
           <div class="card-body mb-1 rgba-grey-light white-text">
-            <p>This is a common misconception that hailed from ALPFA originally standing for "American Latino Professions in Finance
-              & Accounting". However, as time progressed, in 2010, the name was changed to "American Latino Professionals for America"
-              to be more inclusive to professionals from all industries. Our club is most certainly welcome to any major that wants to
-              develop their leadership skills & professional development. We have partnered up with numerous companies from a variety of
-              areas such as technology, consulting, marketing, etc. 
+            <p>This is a common misconception that spawned from ALPFA originally standing for "American Latino Professions in Finance & Accounting." 
+              However, as time progressed, in 2010, the name was changed to "American Latino Professionals for America" to be more inclusive to professionals from all industries.
+               Our club is most certainly welcome to any major that wants to develop their leadership skills & professional development. We have partnered up with numerous companies 
+               from various areas such as technology, consulting, marketing, etc.
             </p>
           </div>
         </div>
@@ -145,7 +161,7 @@
           <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse3"
             aria-expanded="false" aria-controls="collapse3">
             <h5 class="mb-0 white-text text-uppercase font-thin">
-              What is a committee and how do I join one?<i class="fas fa-angle-down rotate-icon"></i>
+              <i class="fas fa-angle-down rotate-icon"></i> What is a committee and how do I join one?</i>
             </h5>
           </a>
         </div>
@@ -154,14 +170,13 @@
         <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3"
           data-parent="#accordionEx7">
           <div class="card-body mb-1 rgba-grey-light white-text">
-            <p>One of the greatest assets to our club are the existence of committees. In the variety of our divisions, we have 
-              commmittees led by the Vice Presidents in charge of them. A member can apply to these committees and gain skills relevant
-              to them, as well as leadership skills
+            <p>One of the greatest assets to our club is the existence of committees. In the variety of our divisions, we have committees led by the Vice Presidents 
+              in charge of them. A member can apply to these committees and gain skills relevant to them, as well as leadership skills.
               <br>
-              <br>Committee members help VPs execute the goals set out by ALPFA. To join a committee, members must submit an application, have a 3.0 GPA, 
-              and be able to fully commit by attending the required meetings and be able to support their VP.
+              <br>What a committee member entails is assisting the Vice Presidents in their duties established by ALPFA. Therefore, it is imperative for the member to be 
+              attentive to their VP's demands & always participate in the required meetings. An ideal candidate should have at least a 3.0 GPA and the aptitude to perform well in their position. 
               <br>
-              <br>Applications to become a committee member are usually released in early September. Stay tuned!
+              <br>Applications to become a committee member can be accessed <a href="https://docs.google.com/forms/d/1kFxh9sDdzSniExP6oCJ3OvN4KuWwnLZQCal4AjJCHuM/viewform?edit_requested=true">here</a>
             </p>
           </div>
         </div>
@@ -176,7 +191,7 @@
           <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse4"
             aria-expanded="false" aria-controls="collapse4">
             <h5 class="mb-0 white-text text-uppercase font-thin">
-              How will meetings be conducted when the univeristy is virtual for the Fall 2020 semester?<i class="fas fa-angle-down rotate-icon"></i>
+              <i class="fas fa-angle-down rotate-icon"></i> How will meetings be conducted in this virtual environment?</i>
             </h5>
           </a>
         </div>
@@ -185,11 +200,10 @@
         <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4"
           data-parent="#accordionEx7">
           <div class="card-body mb-1 rgba-grey-light white-text">
-            <p>To accomodate with this virtual environment, we will conduct our meetings via Zoom. Each member will receive updates on upcoming
-              events along with the links to access them if they are registered to our newsletter & <a href="events.html">calendar</a>. 
-              However, they can also be notified through our social media platforms (Instagram, Facebook, LinkedIn).
+            <p>To accommodate this virtual environment, we will conduct our meetings via Zoom. Each member will receive updates on upcoming events, along with the links to access them, if they are 
+              registered to our newsletter & <a href="events.html">calendar</a>. However, they can also be notified through our social media platforms (Instagram, Facebook, LinkedIn).
               <br>
-              <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link">Join</a> us to learn more about how you can get involved!
+              <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link">Join</a>us to learn more about how you can get involved!
             </p>
           </div>
         </div>
@@ -204,7 +218,7 @@
           <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse5"
             aria-expanded="false" aria-controls="collapse5">
             <h5 class="mb-0 white-text text-uppercase font-thin">
-              What is the difference between Basic & Premium Membership?<i class="fas fa-angle-down rotate-icon"></i>
+              <i class="fas fa-angle-down rotate-icon"></i> What is the difference between Basic & Premium Membership?</i>
             </h5>
           </a>
         </div>
@@ -249,7 +263,7 @@
           <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse6"
             aria-expanded="false" aria-controls="collapse2">
             <h5 class="mb-0 white-text text-uppercase font-thin">
-              HOW CAN I BE ON THE E-BOARD?<i class="fas fa-angle-down rotate-icon"></i>
+              <i class="fas fa-angle-down rotate-icon"></i> HOW CAN I BE ON THE E-BOARD?</i>
             </h5>
           </a>
         </div>
@@ -287,13 +301,13 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-4 mx-auto">
+      <div class="col-md-3">
 
         <!-- Content -->
         <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ALPFA Rutgers-Newark</h5>
-        <p>Rutgers Business School
-          <br>1 Washington Park, Suite 324
-          <br>Newark, NJ 07102-3122</p>
+        <p><i class="fa fa-university mr-2" aria-hidden="true"></i>Rutgers Business School
+          <br><i class="fa fa-building mr-2" aria-hidden="true"></i>1 Washington Park, Suite 324
+          <br><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Newark, NJ 07102-3122</p>
 
       </div>
 
@@ -302,11 +316,47 @@
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
+      <div class="col-md-3">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Links</h5>
+    <!-- Social buttons -->
+    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Follow us on social media</h5>
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.linkedin.com/in/alpfa-rutgers-newark-334a48158/" role="button">
+          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-linkedin-50.png" alt="" class="trans"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/runalpfa/">
+          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-instagram-50.png" alt="" class="trans"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/runalpfa/">
+          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-facebook-50.png" alt="" class="trans"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.tiktok.com/@runalpfa">
+          <i><img src="img/Icon8 Fonts/SocialMediaIcons/icons8-tiktok-50.png" alt="" class="trans"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
 
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 justify-content-center align-self-center">
+
+        <!-- Links -->
         <ul class="list-unstyled text-center">
           <li>
             <a href="index.html">Home</a>
@@ -323,16 +373,15 @@
         </ul>
 
       </div>
+  
       <!-- Grid column -->
 
       <hr class="clearfix w-100 d-md-none">
 
       <!-- Grid column -->
-      <div class="col-md-2 mx-auto">
+      <div class="col-md-3 justify-content-center align-self-center">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Links</h5>
-
         <ul class="list-unstyled text-center">
           <li>
             <a href="donate.html">Donate</a>
@@ -357,51 +406,8 @@
   </div>
   <!-- Footer Links -->
 
-  <hr>
-
-  <!-- Call to action -->
-  <ul class="list-unstyled list-inline text-center py-2">
-    <li class="list-inline-item">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger" role="button">Join Us</a>
-    </li>
-    <li class="list-inline-item">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
-        Contact Us
-      </button>
-    </li>
-  </ul>
-
-  <!-- Call to action -->
-
-  <hr>
-
-   <!-- Social buttons -->
-   <ul class="list-unstyled list-inline text-center">
-    <li class="list-inline-item">
-      <a href="https://www.linkedin.com/in/alpfa-rutgers-newark-334a48158/" class="btn-floating btn-fb mx-1" role="button">
-        <i class="fab fa-linkedin-in"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.instagram.com/runalpfa/" class="btn-floating btn-dribbble mx-1">
-        <i class="fab fa-instagram"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.facebook.com/runalpfa/" class="btn-floating btn-li mx-1">
-        <i class="fab fa-facebook-f"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.youtube.com/channel/UCSmcAcl5HvuQLBnW-gjF25g" class="btn-floating btn-dribbble mx-1">
-        <i class="fab fa-youtube"> </i>
-      </a>
-    </li>
-  </ul>
-  <!-- Social buttons -->
-
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 darker">
+  <div class="footer-copyright text-center py-3 mt-4 darker">
     <p>Copyright &copy; <span id="year"></span><a href="https://mdbootstrap.com/"> MDBootstrap.com</a></p>
   </div>
   <!-- Copyright -->
@@ -461,6 +467,23 @@
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
   </script>
+
+<script>
+  $(document).ready(function(){
+      // Add down arrow icon for collapse element which is open by default
+      $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find(".fa").addClass("fa-angle-down").removeClass("fa-angle-right");
+      });
+      
+      // Toggle right and down arrow icon on show hide of collapse element
+      $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-angle-right").addClass("fa-angle-down");
+      }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-right");
+      });
+  });
+</script>
+
 </body>
 
 </html>
