@@ -1,46 +1,16 @@
-/*
-Banner in Homepage
+/*Banner in Homepage
 Removes white gap between slides
 */
-header {
-    position: relative;
-    background-color: black;
-    height: 65vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
 
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  header .container {
-    position: relative;
-    z-index: 2;
-  }
-
-  header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
+.carousel-item {
+  height: 80vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
   @media (pointer: coarse) and (hover: none) {
     header {
@@ -50,6 +20,7 @@ header {
       display: none;
     }
   }
+
 
 .carousel {
   background:#444;
@@ -211,7 +182,7 @@ anchors are inline so you need ot make them block to go full width
     }
   }
 
-video {
+  video {
     width: 100%;
   }
 
@@ -241,4 +212,18 @@ video {
 	background-color: #E74C3C;
 	border-bottom: 5px solid #BD3E31;
 	text-shadow: 0px -2px #BD3E31;
+}
+
+/* Navbar Alignment */
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/*Social Media Icon Zoom*/
+.trans:hover {
+  transform:scale(1.8);
+  -webkit-transform:scale(1.8);
+  -moz-transform:scale(1.8);
+  opacity:1;
 }
