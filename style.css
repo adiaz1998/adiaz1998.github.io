@@ -1,0 +1,238 @@
+/*Banner in Homepage
+Removes white gap between slides
+*/
+
+.carousel-item {
+  height: 80vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item h1 {
+  position: absolute;
+  margin: 0;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url(/img/FillerUntilWeHaveOurOwnPicture.jpg) black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+
+.carousel {
+  background:#444;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:auto;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+  /* For Carousel */
+  .brands {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px
+}
+
+.brands_slider_container {
+    height: 130px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 97px;
+    padding-right: 97px
+}
+
+.brands_slider {
+    height: 100%;
+    margin-top: 50px
+}
+
+.brands_item {
+    height: 100%
+}
+
+.brands_item img {
+    max-width: 100%
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer
+}
+
+.brands_nav i {
+    color: #e5e5e5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.brands_nav:hover i {
+    color: #676767
+}
+
+.brands_prev {
+    left: 40px
+}
+
+.brands_next {
+    right: 40px
+}
+
+/*Banner Colors*/
+.blue {
+  background-color: #003966;
+}
+
+.red {
+  background-color: #d31f36;
+}
+
+.grey {
+  background-color: #a7a9ac;
+}
+
+.lightblue{
+  background-color: #57DCF1;
+}
+
+.gold{
+  background-color: #EEE8AA;
+}
+
+.platinum{
+  background-color: #E5E4E2;
+}
+
+.darker{
+  background-color:rgba(0, 0, 0, 0.2);
+}
+
+/* Font */
+@font-face {
+  font-family: Bebas-Neue;
+  src: url('/font/BebasNeue-Regular.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: Playlist-Script;
+  src: url('/font/Playlist\ Script.otf') format("opentype");
+}
+
+@font-face {
+  font-family: Playlist-Ornament;
+  src: url('/font/Playlist\ Ornament.otf') format("opentype");
+}
+
+@font-face {
+  font-family: Playlist-Caps;
+  src: url('/font/Playlist\ Caps.otf') format("opentype");
+}
+
+/* A fix to adjust the card's width */
+.card-img-top {
+  object-fit: cover;
+}
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .card-img-top {
+        height: 19vw;
+    }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .card-img-top {
+        height: 16vw;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 16vw;
+    }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: vw;
+    }
+  }
+
+  video {
+    width: 100%;
+  }
+
+  /* Action Button */
+  
+  .animate
+  {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+  }
+  
+  .action-button
+  {
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;	
+  }
+ 
+  .redforactionbutton
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+/* Navbar Alignment */
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/*Social Media Icon Zoom*/
+.trans:hover {
+  transform:scale(1.8);
+  -webkit-transform:scale(1.8);
+  -moz-transform:scale(1.8);
+  opacity:1;
+}
