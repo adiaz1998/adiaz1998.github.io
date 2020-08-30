@@ -12,6 +12,15 @@ Removes white gap between slides
   background-size: cover;
 }
 
+.carousel-item h1 {
+  position: absolute;
+  margin: 0;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
   @media (pointer: coarse) and (hover: none) {
     header {
       background: url(/img/FillerUntilWeHaveOurOwnPicture.jpg) black no-repeat center center scroll;
