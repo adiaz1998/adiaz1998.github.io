@@ -236,3 +236,12 @@ anchors are inline so you need ot make them block to go full width
   -moz-transform:scale(1.8);
   opacity:1;
 }
+
+/*FAQ Page Accordion*/
+[data-toggle="collapse"] i:before {  
+  content: "\f068";
+}
+
+[data-toggle="collapse"].collapsed i:before {
+  content: "\f067";
+}
