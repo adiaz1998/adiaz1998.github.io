@@ -12,28 +12,6 @@ Removes white gap between slides
   background-size: cover;
 }
 
-.carousel-item h1 {
-  position: absolute;
-  margin: 0;
-  color: white;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-  @media (pointer: coarse) and (hover: none) {
-    header {
-      background: url(/img/FillerUntilWeHaveOurOwnPicture.jpg) black no-repeat center center scroll;
-    }
-    header video {
-      display: none;
-    }
-  }
-
-
-.carousel {
-  background:#444;
-}
 
 /*
 Forces image to be 100% width and not max width of 100%
@@ -42,6 +20,7 @@ Forces image to be 100% width and not max width of 100%
   width:100%;
   height:auto;
 }
+
 
 /* 
 anchors are inline so you need ot make them block to go full width
@@ -141,6 +120,10 @@ anchors are inline so you need ot make them block to go full width
   background-color:rgba(0, 0, 0, 0.2);
 }
 
+.white{
+  background-color: #fff;
+}
+
 /* Font */
 @font-face {
   font-family: Bebas-Neue;
@@ -160,6 +143,11 @@ anchors are inline so you need ot make them block to go full width
 @font-face {
   font-family: Playlist-Caps;
   src: url('/font/Playlist\ Caps.otf') format("opentype");
+}
+
+@font-face {
+  font-family: LeagueGothic-Regular;
+  src: url('/font/LeagueGothic-Regular.otf') format("opentype");
 }
 
 /* A fix to adjust the card's width */
@@ -244,4 +232,26 @@ anchors are inline so you need ot make them block to go full width
 
 [data-toggle="collapse"].collapsed i:before {
   content: "\f067";
+}
+
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+/* Card Image */
+.embed-responsive .card-img {
+  object-fit: cover;
+}
+
+.deepshd {
+  color: #fff;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
