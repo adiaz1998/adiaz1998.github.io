@@ -18,11 +18,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <!--CARD-->
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/infinite-slider.css">
+  <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
   <title>Membership Benefits</title>
 </head>
+<style type="text/css">
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .slider {
+      width: 50%;
+      margin: 100px auto;
+      height:100%;
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+  ul li{
+   font-size:15px;
+   font-family:sans-serif;
+}
+</style>
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -72,7 +122,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 m-auto py-4 text-center text-light">
-        <h1 style="font-family:Bebas-Neue;font-size:75px">Welcome to the ALPFA Familia!</h1>
+        <h1 style="font-family:Bebas-Neue;font-size:75px">Be Part of the Alpfamilia</h1>
       </div>
     </div>
   </div>
@@ -81,64 +131,87 @@
 
 <!-- OUR BRAND -->
 <section>
-  <div class="container mt-3">
-    <div class="col-md-12 d-flex justify-content-center text-center">
-      <img src="/img/ALPFA Brand.gif" alt="" class="img-fluid shadow-lg">
-    </div>
-  </div>
-</section>
-
-
-
-<section>
-  <div class="container">
-    <div class="row py-3">
-      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 py-3 align-self-center">
-        <p class="text-left lead mt-3" style="font-size:25px;">At ALPFA Rutgers-Newark we care about you. We know the dedicated, hard-working students we have on our campus and want to provide the resources you need to help shape your future. 
-          We are here to motivate and develop you into professionals. By offering direct access to opportunities and support, we will supply the technical, analytical, and professional skills needed to excel in Corporate America. Our diverse and inclusive environment is a space for you to grow and be a part of the ALPFAmilia.
+    <div class="container">
+      <div class="d-flex justify-content-center text-center py-4">
+        <img src="/img/ALPFA brand.gif" alt="" class="img-fluid shadow-lg">
+      </div>
+        <p style="font-family:sans-serif;font-size:25px;" class="text-center py-2">Here at ALPFA Rutgers-Newark, we are not only a professional organization, but a community. Our support for one another goes beyond our work. 
+          In your ALPFA journey, you will build lifelong relationships with other diverse members. This isn’t your typical “filler for your resume”, but actually an opportunity to be part of something impactful.
           <br>
-          <br>Let us be the bridge between where you are now, and where you see yourself in the future.    
-        </p>
-      </div>
-    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 py-3">
-      <div class="card mt-3 h-100">
-        <div class="card-header bg-white text-center border-0">
-            <div class="row justify-content-center ">
-                <div class="col mt-2"> <img class="align-self-center text-center rounded-circle outside img-fluid" src="img/MelodyMejiaTestimonialPhoto.png" width="110" height="110"> </div>
-            </div>
-            <div class="row text-center name">
-                <div class="col mb-2">
-                    <h4 class="mb-0 profile-pic">Melody Mejia</h4> <small class="mt-0">VP of Member Relations</small>
-                </div>
-            </div>
-            <div class="card-body pt-0 text-center pb-3 ">
-              <div class="row justify-content-center">
-                  <div class="col-md-9 col">
-                      <p class="bold" style="font-size:14px;"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="20" height="20"></span>I transferred to Rutgers Business School towards the end of my sophomore year. 
-                        Two weeks into the semester, I became an ALPFA member. I didn’t do it because of the amazing resources available to its members; I did it because I thought it would be an excellent opportunity to make friends. 
-                        Not only did I make friends, but I also became a part of the ALPFAmilia. My favorite thing about ALPFA was how diverse AND inclusive the environment is. Later on, I decided to join the consulting committee, where I 
-                        learned soft and analytical skills. Now I am on the 2020-2021 Executive Board! 
-                        I also got an internship with EY through ALPFA for summer 2020 and was offered to return for summer 2021! This organization allowed me to pursue many opportunities, and I want the same for YOU.<img class="img-fluid quotes-down " src="https://i.imgur.com/DPzmyiD.png" width="20" height="20"></p>
-                  </div>
+          <br>Our members are at the core of what we do. Join our Committees and gain real-life experience to add to your repertoire.</p>
+        <p class="text-center mb-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" 
+          class="btn btn-danger btn-lg">Apply Now</a></p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 m-auto">
+        <div id="slider4" class="carousel slide mb-5 shadow-lg" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#slider4"
+            data-slide-to="0"></li>
+            <li data-target="#slider4"
+            data-slide-to="1"></li>
+            <li data-target="#slider4"
+            data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" style="height:100%;object-fit:cover;" 
+              src="img/WheelofALPFA.jpg" alt="First Slide">
+              <!--The code in the bottom will only render the caption visible in medium+ screens-->
+              <div class="carousel-caption d-md-block">
+                <h3 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;">In our General Body Meeting, our members get the chance to spin “The Wheel of ALPFA” and enjoy some coffee con leche.</h3>
               </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" style="height:100%;object-fit:cover;"
+              src="img/StandAgainstCancer.jpg" alt="Second Slide">
+              <div class="carousel-caption d-md-block">
+                <h3 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;">Check out our team giving back for the American Cancer Society</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" style="height:100%;object-fit:cover;"
+              src="img/MixerCommittee.jpg" alt="Third Slide">
+              <div class="carousel-caption d-md-block">
+                <h3 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;">Our Committee Mixer was a hit with our members competing to make the best gingerbread house and sharing a Thanksgiving meal.</h3>
+              </div>
+            </div>
           </div>
+          
+          <!--CONTROLS-->
+          <a href="#slider4" class="carousel-control-prev"
+          data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+    
+          <a href="#slider4" class="carousel-control-next"
+          data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
       </div>
-  </div>
-</div>
+      </div>
     </div>
-    </div>
-    <hr>
 </section>
 
- <section>
-   <div class="container text-center mb-5 mt-4">
-     <img src="img/professionaldevelopmentdiv.png" style="width:700px;" alt="" class="img-fluid shadow-lg">
-  </div>
-</section>
 
 <!-- PROFESSIONAL DEVELOPMENT -->
+<section class="blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 m-auto py-4 text-center text-light">
+        <h1 style="font-family:Bebas-Neue;font-size:75px">Professional Development</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <section>
-  <div class="container mb-4">
+  <div class="container mt-4 mb-4">
     <div class="row">
       <div class="col-md-8 justify-content-center">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -149,19 +222,19 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/ConsultingTeam.jpg" class="d-block img-fluid" style="height:100%;" alt="...">
+              <img src="/img/ConsultingTeam.jpg" class="d-block img-fluid" style="height:100%;object-fit:cover;" alt="...">
               <div class="carousel-caption d-md-block">
                 <h4>ALPFA Consulting team receiving 3rd place in Deloitte’s Tech competition</h4>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/img/ToBeConvertedToGif.gif" class="d-block img-fluid" style="height:100%;" alt="...">
+              <img src="/img/ToBeConvertedToGif.gif" class="d-block img-fluid" style="height:100%;object-fit:cover;" alt="...">
               <div class="carousel-caption d-md-block">
                 <h4>5th annual Metor & Mentee program aimed to combine professionals and students together for everlasting career advice and coaching for future success!</h4>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/HBSEvent.jpg" class="d-block img-fluid" style="height:100%;" alt="...">
+              <img src="img/HBSEvent.jpg" class="d-block img-fluid" style="height:100%;object-fit:cover;" alt="...">
               <div class="carousel-caption d-md-block">
                 <h4>ALPFA Rutgers Newark at the HBS in NYC College Programs Information Session at PepsiCo Design Innovation Center</h4>
               </div>
@@ -178,7 +251,7 @@
         </div>
       </div>
       <div class="col-md-4 py-3 align-self-center">
-        <p class="lead" style="font-size:25px;">Take your skills to the next level. Whether you’re struggling to speak to a recruiter or need a judge-free space to practice your elevator pitch, ALPFA is here to help. We pride ourselves in getting you acclimated to make the first interaction with your ideal employer and walking away with confidence.  
+        <p class="lead"  style="font-family:sans-serif;font-size:25px;">Take your skills to the next level. Whether you’re struggling to speak to a recruiter or need a judge-free space to practice your elevator pitch, ALPFA is here to help. We pride ourselves in getting you acclimated to make the first interaction with your ideal employer and walking away with confidence.  
          <br> 
           <br>Build on your skills with our valuable resources:
         </p>
@@ -190,224 +263,347 @@
 <div class="container mt-5 align-self-center">
   <div class="row justify-content-center">
     <dl class="row">
-      <dt class="col-sm-7 mb-2" style="font-family:Bebas-Neue;font-size:30px;">Office Hours</dt>
-      <dd class="col-sm-5 mb-2"><p class="lead" style="font-size:25px;"><b>Meet with our industry-experienced Executive Board</b> to help with resume review, interview practice, and coaching.</p></dd>
-      <dt class="col-sm-7 mb-2" style="font-family:Bebas-Neue;font-size:30px;">Professional Development Workshops</dt>
-      <dd class="col-sm-5 mb-2"><p class="lead" style="font-size:25px;"><b>Refine your soft and technical skills</b> set with our professional development workshops.</p></dd>
-      <dt class="col-sm-7 mb-2" style="font-family:Bebas-Neue;font-size:30px;">Case Competitions</dt>
-      <dd class="col-sm-5 mb-2"><p class="lead" style="font-size:25px;"><b>Gain experience in problem solving</b> with our consulting team.</p></dd>
-      <dt class="col-sm-7"style="font-family:Bebas-Neue;font-size:30px;">Mentorship Program</dt>
-      <dd class="col-sm-5"><p class="lead" style="font-size:25px;"><b>Get paired with an experienced professional</b> to help guide your career path  for the academic-year and beyond.</p></dd>
+      <dt class="col-sm-7 mb-2"><p style="font-family:sans-serif;font-size:30px;">Office Hours</p></dt>
+      <dd class="col-sm-5 mb-2"><p style="font-family:sans-serif;font-size:25px;"><b>Meet with our industry-experienced Executive Board</b> to help with resume review, interview practice, and coaching.</p></dd>
+      <dt class="col-sm-7 mb-2"><p style="font-family:sans-serif;font-size:30px;">Professional Development Workshops</p></dt>
+      <dd class="col-sm-5 mb-2"><p style="font-family:sans-serif;font-size:25px;"><b>Refine your soft and technical skills</b> set with our professional development workshops.</p></dd>
+      <dt class="col-sm-7 mb-2"><p style="font-family:sans-serif;font-size:30px;">Case Competitions</p></dt>
+      <dd class="col-sm-5 mb-2"><p style="font-family:sans-serif;font-size:25px;"><b>Gain experience in problem solving</b> with our consulting team.</p></dd>
+      <dt class="col-sm-7"><p style="font-family:sans-serif;font-size:30px;">Mentorship Program</p></dt>
+      <dd class="col-sm-5"><p style="font-family:sans-serif;font-size:25px;"><b>Get paired with an experienced professional</b> to help guide your career path  for the academic-year and beyond.</p></dd>
   </dl>
   </div>
 </div>
-<hr>
 
  
-<section>
-  <div class="container">
-    <div class="row py-3">
-      <div class="col-md-8 py-3 align-self-left">
-        <img src="img/EXPANDYOURNETWORK.png" class="img-fluid">
-      </div>
-      <div class="col-md-4 m-auto d-flex justify-content-center py-3">
-        <p class="lead text-right" style="font-size:25px">ALPFA is a national organization that serves both students and professionals with 95,000+ members. This allows ALPFA to form partnerships with over 100 Fortune 500 companies. As a member, you become a part of this rich network.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center mb-3">
-      <img src="/img/CorporateSponsors.jpg" alt="" style="width:850px;" class="shadow-lg img-fluid">
-    </div>
-  </div>
-</div>
-<hr>
-</section>
 
 
-
-<!-- REGIONAL & NATIONAL CONVETION -->
-<section>
-  <div class="container text-center mb-3 mt-4">
-    <img src="img/symposium.png" style="width:700px;" alt="" class="img-fluid shadow-lg">
- </div>
-</section>
-
-<section>
-  <div class="container">
+<!-- COMMITTEES IN DEPTH -->
+<section class="red">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12 py-3 text-center justify-content-center align-self-center">
-        <p class="lead" style="font-size:25px;">Unlock access to ALPFA’s regional symposiums and national convention. These are the most anticipated events of the year and we highly encourage our members to attend. These events function as career fairs where our students get the 
-          opportunity to interview on the spot. Our past members have landed internships and full-time offers in top firms like <b>Goldman Sachs, EY, and Accenture</b>.  We want YOU to be in the front-lines of these opportunities. 
-      </div>
-      <div class="col-md-12 py-3 text-center justify-content-center align-self-center">
-        <p class="lead" style="font-size:25px;">To receive direct benefits to attend these events and be a part of our community, log on to <a href="https://www.alpfa.org">alpfa.org</a> and register to be a member. Check out the benefits of each package below:
-          If you have any questions, <a href="mailto:alpfa.rbs@gmail.com">reach out to us directly</a>.
-          
+      <div class="col-md-10 m-auto py-4 text-center text-light">
+        <h1 style="font-family:Bebas-Neue;font-size:75px">Our Committees</h1>
       </div>
     </div>
   </div>
-<hr>
+</section>
 </section>
 
-
-<!-- MEMBER DIFFERENCES -->
-<section>
-  <div class="container">
-    <table class="table">
-      <thead class="thead-dark">
-          <tr>
-              <th><h2 class="text-center" style="font-family:Bebas-Neue;">Free Membership</h2></th>
-              <th><h2 class="text-center" style="font-family:Bebas-Neue;">Premium Membership</h2></th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td><i class="fas fa-check"></i> Access to local student chapter networking events, receptions, and programs.</td>
-              <td><i class="fas fa-check"></i> All Basic Membership benefits included</td>
-          </tr>
-          <tr>
-              <td><i class="fas fa-check"></i>  Discounts For The National Covention</td>
-              <td><i class="fas fa-check"></i>  Free access to our northeast regional symposium</td>
-          </tr>
-          <tr>
-              <td><i class="fas fa-check"></i>  Eligible to apply to ALPFA's Academic Scholarship Programs</td>
-              <td><i class="fas fa-check"></i>  Access to professional chapter networking events, receptions, and other programs</td>
-          </tr>
-          <tr>
-            <td><i class="fas fa-check"></i>  Eligible for ALPFA KPMG case study competition at selected schools</td>
-            <td><i class="fas fa-check"></i>  ALPFA eNews: biweekly member newsletter</td>
-         </tr>
-          <tr>
-           <td><i class="fas fa-check"></i>  Eligible for Deloitte Tech competition at National Convention</td>
-            <td><i class="fas fa-check"></i>  Post your resume and search jobs and internships on ALPFA's online Career Center.</td>
-          </tr>
-      </tbody>
-  </table>
-  </div>
-<hr>
-</section>
-
-
-
-<!--ALPFAMILIA-->
-<section>
-  <div class="container text-center mb-3 mt-4">
-    <img src="img/BecomePartofALPFAmilia.png" style="width:700px;" alt="" class="img-fluid shadow-lg">
- </div>
-</section>
-
-<section>
-  <div class="container">
+<section class="variable slider">
+  <div>
     <div class="row">
-      <div class="text-center py-5">
-        <p style="font-size:25px" class="lead">Here at ALPFA Rutgers-Newark, we are not only a professional organization, but a community. Our support for one another
-           goes beyond our work. In your ALPFA journey, you will build lifelong relationships with other diverse members. This isn’t your typical “filler for your resume”, but actually an opportunity to be part of something impactful.
-           <br>
-           <br>Our members are at the core of what we do. Join our Committees and gain real-life experience to add to your repertoire. 
-           <br>
-           <br>Fill out our interest form if you haven’t already (On The Fourth Slide)</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 m-auto">
-    <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li class="active" data-target="#slider4"
-        data-slide-to="0"></li>
-        <li data-target="#slider4"
-        data-slide-to="1"></li>
-        <li data-target="#slider4"
-        data-slide-to="2"></li>
-        <li data-target="#slider4"
-        data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block img-fluid" style="height:100%;" 
-          src="img/WheelofALPFA.jpg" alt="First Slide">
-          <!--The code in the bottom will only render the caption visible in medium+ screens-->
-          <div class="carousel-caption d-md-block">
-            <h3 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;">In our General Body Meeting, our members get the chance to spin “The Wheel of ALPFA” and enjoy some coffee con leche.</h3>
+      <div class="col-sm-12 col-md-6">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/CB337D2A-3EB4-41AD-B6ED-343F50425837.jpg">
+            <span class="card-title text-center"><h4>Events Committee</h4></span>
+            <h6 class="text-center">Nicole Sales | VP of Events</h6>
+          </div>
+          <div class="card-content col-md-12">
+            <p>
+              <ul>
+                <li>Collaboratively brainstorm to come up with new creative events for our chapter both professionally and socially</li>
+                <li>Work closely with professionals via email and phone calls</li>
+                <li>Learn how to effectively communicate professionally and build relationships</li>
+              </ul>
+              "<b style="font-family:sans-serif;font-size:15px;">If you have great organizational and people skills then
+                 this is the committee for you!!</b>"</p>
+            
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="d-block img-fluid" style="height:100%;"
-          src="img/StandAgainstCancer.jpg" alt="Second Slide">
-          <div class="carousel-caption d-md-block">
-            <h3 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;">Check out our team giving back for the American Cancer Society</h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block img-fluid" style="height:100%;"
-          src="img/MixerCommittee.jpg" alt="Third Slide">
-          <div class="carousel-caption d-md-block">
-            <h3 class="text-monospace" style="color: white; font-family:Bebas-Neue; text-shadow: white 0px 0px 2px;">Our Committee Mixer was a hit with our members competing to make the best gingerbread house and sharing a Thanksgiving meal.</h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block img-fluid" style="height:100%;"
-          src="/img/QRCODE.png" alt="Fourth Slide">
-          <div class="carousel-caption d-md-block">
-          </div>
-        </div>
+        
       </div>
       
-      <!--CONTROLS-->
-      <a href="#slider4" class="carousel-control-prev"
-      data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
+    </div>
 
-      <a href="#slider4" class="carousel-control-next"
-      data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/4CE911A3-2030-49AF-8A01-E0E7D3E5112E.jpg">
+            <span class="card-title text-center"><h4>Consulting Committee</h4></span>
+            <h6 class="text-center">Marimar Hernandez | VP of Consulting</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Become part of a close-knit community passionate about management consulting. </li>
+                <li>The opportunity to participate in case competitions that allow you to solve and present to management consulting professionals.</li>
+                <li>The ability to assist in the planning and execution of consulting events.</li>
+                <li>Receive career guidance on how to build a perfect consulting resume as well as getting connected with professionals from top companies such as Accenture, Deloitte Consulting, BCG, and more.</li>
+              </ul>
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image-top">
+            <img src="img/Carousel/E8CAE24E-ADEC-476A-B360-3E980CC3C760.jpg">
+            <span class="card-title text-center"><h4>Community Outreach Committee</h4></span>
+            <h6 class="text-center">George Calle | VP of Community Outreach</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Participate in Community Outreach events (in-person & virtual) </li>
+                <li>Recruit Volunteers for ALPFA Community Outreach events</li>
+                <li>Brainstorm ideas for initiatives/events</li>
+                <li>Engage in team meetings to discuss events and personal professional development</li>
+                <li>Communicate with both students and professionals about events/updates</li>
+                <li>Drafting forms for event registration and other matters</li>
+              </ul>
+               </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/A9E22A3A-405F-48D8-9B64-CCF9FABEBE2C.jpg">
+            <span class="card-title text-center"><h4>Member Relations Committee</h4></span>
+            <h6 class="text-center">Melody Mejia | VP of Member Relations</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Manage new member sign-ups </li>
+                <li>Help implement strategies to help increase memberships. </li>
+                <li>Help maintain good relationships with professionals, especially recruiters.</li>
+                <li>Most importantly, we manage both the Unilever Mentorship Program and ALPFA-RUN’s yearly Mentor-Mentee Program. </li>
+              </ul>
+
+              "<b style="font-family:sans-serif;font-size:15px;">Since Member Relations manages the mentorship programs, there are many interactions with professionals involved with the role, which is always helpful when looking to increase your network!</b>""
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/AA186CAF-B7E0-4180-A1EA-C22C6F310AE1.jpg">
+            <span class="card-title text-center"><h4>Professional Development Committee</h4></span>
+            <h6 class="text-center">Anthony Gomez | VP of Professional Development</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Assist with coordinating logistics for upcoming Professional Development events, such as communicating with recruiters/students/professionals</li>
+                <li>Develop your public speaking and communications skills by engaging with a series of professionals and other chapter members</li>
+                <li>Assist in the planning of ALPFA's upcoming Professional Development Tech Series</li>
+                <li>Be a part of the first-ever Professional Development committee at ALPFA Rutgers - Newark</li>
+                <li>Build strong relationships with alumni, professionals, and recruiters in all industries</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/F387C5F8-2C4D-4A7D-9820-2705784E6169.jpg">
+            <span class="card-title text-center"><h4>Marketing Committee</h4></span>
+            <h6 class="text-center">Ingrid Gres | VP of Marketing</h6>
+          </div>
+          <div class="card-content">
+            <p>
+                <b>Social Media Coordinator</b>
+                <ul>
+                <li>Scheduling posts on all Social Media Platforms</li>
+                <li>Engaging with followers on all social media platforms</li>
+                <li>Creating captions</li>
+                <li>Posting Instagram stories</li>
+              </ul>
+                <b>Content Creator</b>
+                <ul>
+                <li>- Creating and editing flyers for events</li>
+                <li>- Creating Instagram stories</li>
+                <li>- Working on creative and unique content  </li>
+                </ul>
+                <b>Campaign Coordinator</b>
+                <ul>
+                <li>Creating and editing our "Opportunities" Newsletter</li>
+                OR
+                <li>Creating and editing our "Club Events" Newsletter</li>
+                </ul>
+                <b>Tik Tok Content Creator</b>
+                <ul>
+                <li>Keeping track of Tik Tok trends we can do</li>
+                <li>Editing Tik Toks</li>
+                <li>Making Tik Toks</li>
+              </ul>
+
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/6699A858-80E2-45BC-B69D-D3290D6E6EB8.jpg">
+            <span class="card-title text-center"><h4>IT Committee</h4></span>
+            <h6 class="text-center">Alan Daiz | VP of IT</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Maintenance of our website through HTML5, CSS3 (Bootstrap Framework), Javascript</li>
+                <li>Automating several tasks in our organization</li>
+                <li>Integration of our membership database from Google Sheets to SQL</li>
+                </ul>
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+
+  </div>
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/2497EA5F-D103-4B64-B26F-BB117DAA189D.jpg">
+            <span class="card-title text-center"><h4>Fundraising Committee</h4></span>
+            <h6 class="text-center">Wendy Yupa | VP of Fundraising</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Help plan and carry out fundraising to meet ALPFA's goal.</li>
+                <li>Work directly with vendors, the Office of Student Life and Leadership and other companies</li>
+                <li>Collaborate with the finance committee</li>
+                <li>Develop leadership skills and coordinate fundraising initiatives with professionals and companies</li>
+                </ul>
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card" style="width: 250px;">
+          <div class="card-image">
+            <img src="img/Carousel/9986D6F8-0D57-4235-B92F-E0087D47EC71.jpg">
+            <span class="card-title text-center"><h4>Finance Committee</h4></span>
+            <h6 class="text-center">Zarafshan Rizwan</h6>
+          </div>
+          <div class="card-content">
+            <p>
+              <ul>
+                <li>Strategize, develop, and execute fundraising initiatives to generate funds</li>
+                <li>Work at events / projects to raise funds through virtual bake sales, external partnerships with local businesses and companies </li>
+                <li>Work with an allocated budget overarching scholarship goals for the year.</li>
+                <li>Work to maintain an active and updated Members Point System</li>
+                <li>Expected to actively attend committee meetings, provide individual opinion/perspectives</li>
+                </ul>
+            </p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+  
+</section>
+
+
+<br><p class="text-center mb-4"><a href="https://docs.google.com/forms/d/1kFxh9sDdzSniExP6oCJ3OvN4KuWwnLZQCal4AjJCHuM/viewform?edit_requested=true" 
+  class="btn btn-danger btn-lg">Join a Comittee Now!</a></p>
+
+<!--Testimonials-->
+<section class="blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 m-auto py-4 text-center text-light">
+        <h1 style="font-family:Bebas-Neue;font-size:75px">Testimonials</h1>
+      </div>
     </div>
   </div>
-  </div>
-</div>
 </section>
 
 <section>
-  <div class="container mb-5">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mt-3 h-100">
-          <div class="card-header bg-white text-center border-0">
-              <div class="row justify-content-center ">
-                  <div class="col mt-2"> <img class="align-self-center text-center rounded-circle outside img-fluid" src="img/Mealnie.png" width="110" height="110"> </div>
-              </div>
-              <div class="row text-center name">
-                  <div class="col mb-2">
-                      <h4 class="mb-0 profile-pic">Melanie Posso</h4> <small class="mt-0">IFS Start Intern Summer 2020 @ PWC</small>
-                  </div>
-              </div>
-              <div class="card-body pt-0 text-center pb-3 ">
-                <div class="row justify-content-center">
-                    <div class="col-md-9 col">
-                        <p class="bold" style="font-size:21px;"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="20" height="20"></span>When I saw the members in ALPFA who looked like me, spoke like me,
-                           and were from the same places as me getting internships and full-time opportunities in corporate America, it inspired me to work just as hard. ALPFA has a minority representation in Fortune 500 companies that 
-                           do not make you feel like you’re incapable of achievements like them.”<img class="img-fluid quotes-down " src="https://i.imgur.com/DPzmyiD.png" width="20" height="20"></p>
-                    </div>
+  <div class="card-deck mb-3">
+      <div class="card mt-3">
+        <div class="card-header bg-white text-center border-0">
+            <div class="pt-4 row justify-content-center ">
+                <div class="col mt-2"> <img class="align-self-center text-center rounded-circle outside img-fluid" src="img/Mealnie.png" width="110" height="110"> </div>
+            </div>
+            <div class="row text-center name">
+                <div class="col mb-2">
+                    <h4 class="mb-0 profile-pic">Melanie Posso</h4> <small class="mt-0">IFS Start Intern Summer 2020 @ PWC</small>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="card-body pt-4 text-center pb-3">
+              <div class="row justify-content-center">
+                  <div class="col-md-8 col">
+                      <p class="bold" style="font-family:sans-serif;font-size:20px;"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="20" height="20"></span>When I saw the members in ALPFA who looked like me, spoke like me,
+                         and were from the same places as me getting internships and full-time opportunities in corporate America, it inspired me to work just as hard. ALPFA has a minority representation in Fortune 500 companies that 
+                         do not make you feel like you’re incapable of achievements like them.<img class="img-fluid quotes-down " src="https://i.imgur.com/DPzmyiD.png" width="20" height="20"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
-  <div class="col-md-6">
-    <div class="card mt-3 h-100">
-      <div class="card-header bg-white text-center border-0">
+
+    <div class="card mt-3">
+      <div class="pt-4 card-header bg-white text-center border-0">
           <div class="row justify-content-center ">
               <div class="col mt-2"> <img class="align-self-center text-center rounded-circle outside img-fluid" src="img/Leighton.png" width="110" height="110"> </div>
           </div>
@@ -416,10 +612,10 @@
                   <h4 class="mb-0 profile-pic">Leighton Alarcon</h4> <small class="mt-0">Audit & Assurance Intern Summer 2020 @ Deolitte</small>
               </div>
           </div>
-          <div class="card-body pt-0 text-center pb-3 ">
+          <div class="card-body pt-4 text-center pb-3 ">
             <div class="row justify-content-center">
-                <div class="col-md-9 col">
-                    <p class="bold" style="font-size:19px;"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="20" height="20"></span>When I first was introduced to ALPFA I realized quickly that 
+                <div class="col-md-10 col">
+                    <p class="bold" style="font-family:sans-serif;font-size:20px;"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="20" height="20"></span>When I first was introduced to ALPFA I realized quickly that 
                       this was the platform that would help me grow professionally. Little did I know that ALPFA and the E-board members I am privileged to call friends would have a profound impact on my personal growth.
                        Due to all of the events, professional development, industry exposure, and the family culture that ALPFA emanates are the reasons why my confidence to succeed in my career is at an all-time high. 
                        Thank you to the incredible team I have, and thank you to the organization that provides us with so much support. #ALPFAmilia<img class="img-fluid quotes-down " src="https://i.imgur.com/DPzmyiD.png" width="20" height="20"></p>
@@ -428,19 +624,37 @@
         </div>
     </div>
 </div>
-</div>
+<div class="card mt-3">
+  <div class="pt-4 card-header bg-white text-center border-0">
+      <div class="row justify-content-center ">
+          <div class="col mt-2"> <img class="align-self-center text-center rounded-circle outside img-fluid" src="img/MelodyMejiaTestimonialPhoto.png" width="110" height="110"> </div>
+      </div>
+      <div class="row text-center name">
+          <div class="col mb-2">
+              <h4 class="mb-0 profile-pic">Melody Mejia</h4> <small class="mt-0">Launch Intern Summer 2020 @ EY</small>
+          </div>
+      </div>
+      <div class="card-body pt-4 text-center pb-3 ">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+              <p class="bold" style="font-family:sans-serif;font-size:18px;"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="20" height="20"></span>I transferred to Rutgers Business School towards the end of my sophomore year. 
+                Two weeks into the semester, I became an ALPFA member. I didn’t do it because of the amazing resources available to its members; I did it because I thought it would be an excellent opportunity to make friends. 
+                Not only did I make friends, but I also became a part of the ALPFAmilia. My favorite thing about ALPFA was how diverse AND inclusive the environment is. Later on, I decided to join the consulting committee, where I 
+                learned soft and analytical skills. Now I am on the 2020-2021 Executive Board! 
+                I also got an internship with EY through ALPFA for summer 2020 and was offered to return for summer 2021! This organization allowed me to pursue many opportunities, and I want the same for YOU.<img class="img-fluid quotes-down " src="https://i.imgur.com/DPzmyiD.png" width="20" height="20"></p>
+            </div>
+        </div>
     </div>
+</div>
+</div>
   </div>
 </section>
-
-
-<section>
 
 
 
 
 <!-- Footer -->
-<footer id="main-footer" class="bg-dark text-white pt-4">
+<footer id="main-footer" class="bg-dark text-white pt-4 mt-5">
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
@@ -472,22 +686,22 @@
     <ul class="list-unstyled list-inline text-center">
       <li class="list-inline-item">
         <a href="https://www.linkedin.com/in/alpfa-rutgers-newark-334a48158/" role="button">
-          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-linkedin-50.svg" alt="" class="trans"></i>
+          <i><img src="/img/Icon8 Fonts/MoreSocialMediaIcons/linkedin.png" alt="" class="trans" style="width:50px;height:50px;"></i>
         </a>
       </li>
       <li class="list-inline-item">
         <a href="https://www.instagram.com/runalpfa/">
-          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-instagram-50.svg" class="trans"> </i>
+          <i><img src="/img/Icon8 Fonts/MoreSocialMediaIcons/instagram.png" class="trans" style="width:50px;height:50px;"> </i>
         </a>
       </li>
       <li class="list-inline-item">
         <a href="https://www.facebook.com/runalpfa/">
-          <i><img src="/img/Icon8 Fonts/SocialMediaIcons/icons8-facebook-50.svg" alt="" class="trans"> </i>
+          <i><img src="/img/Icon8 Fonts/MoreSocialMediaIcons/facebook (1).png" alt="" class="trans" style="width:50px;height:50px;"> </i>
         </a>
       </li>
       <li class="list-inline-item">
         <a href="https://www.tiktok.com/@runalpfa">
-          <i><img src="img/Icon8 Fonts/SocialMediaIcons/icons8-tiktok-50.svg" alt="" class="trans"> </i>
+          <i><img src="img/Icon8 Fonts/MoreSocialMediaIcons/tiktok.png" alt="" class="trans" style="width:50px;height:50px;"> </i>
         </a>
       </li>
     </ul>
@@ -549,7 +763,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 mt-4 darker">
-    <p>Copyright &copy; <span id="year"></span><a href="https://mdbootstrap.com/"> MDBootstrap.com</a></p>
+    <p>Copyright &copy; <span id="year"></span> ALPFA Rutgers-Newark</p>
   </div>
   <!-- Copyright -->
 
@@ -592,14 +806,15 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <script src="js/carousel.js"></script>
+
 
   <script>
     $('.carousel').carousel({
@@ -618,6 +833,17 @@
     });
 
   </script>
+
+<script type="text/javascript">
+  $(document).on('ready', function() {
+$(".variable").slick({
+      dots: true,
+      infinite: true,
+      variableWidth: true,
+    });
+});
+</script>
+
 
 
   <script>
