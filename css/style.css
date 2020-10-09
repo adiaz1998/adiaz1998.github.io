@@ -150,6 +150,21 @@ anchors are inline so you need ot make them block to go full width
   src: url('/font/LeagueGothic-Regular.otf') format("opentype");
 }
 
+@font-face {
+  font-family: NunitoSans-Regular;
+  src: url('/font/NunitoSans-Regular.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: NunitoSans-Black;
+  src: url('/font/NunitoSans-Black.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: NunitoSans-Bold;
+  src: url('/font/NunitoSans-Bold.ttf') format("opentype");
+}
+
 /* A fix to adjust the card's width */
 .card-img-top {
   object-fit: cover;
