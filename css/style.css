@@ -1,6 +1,18 @@
 /*Banner in Homepage
 Removes white gap between slides
 */
+.mycarousel{
+  
+  
+}
+
+.mynav{
+position: absolute;
+top:30px;
+width:100%;
+z-index: 999;
+}
+
 
 .carousel-item {
   height: 80vh;
@@ -234,10 +246,7 @@ anchors are inline so you need ot make them block to go full width
 
 /*Social Media Icon Zoom*/
 .trans:hover {
-  transform:scale(1.8);
-  -webkit-transform:scale(1.8);
-  -moz-transform:scale(1.8);
-  opacity:1;
+  
 }
 
 /*FAQ Page Accordion*/

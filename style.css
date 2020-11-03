@@ -1,6 +1,10 @@
 /*Banner in Homepage
 Removes white gap between slides
 */
+a{
+  color: red;
+}
+
 
 .carousel-item {
   height: 80vh;
