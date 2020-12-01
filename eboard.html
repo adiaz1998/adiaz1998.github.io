@@ -24,54 +24,56 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#home">
-          <img src="img/alpfalogo.png" width="80" height="80" alt="">
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
+  <div class="header"> 
+    <nav class="aboutNav navbar navbar-expand-sm ">
+      <div class="container ">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarCollapse">
+          <!-- NavBar Items -->
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  About Us</a>
+                <div class="dropdown-menu">
+                    <a href="aboutus.html" class="dropdown-item">Mission Statement</a>
+                    <a href="eboard.html" class="dropdown-item">Meet The Eboard</a>
+                    <a href="membership benefits.html" class="dropdown-item">Membership Benefits</a>
+                </div>
+              </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="donate.html">Donate</a>
             </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"
-              >About Us</a>
-              <div class="dropdown-menu">
-                  <a href="aboutus.html" class="dropdown-item">Mission Statement</a>
-                  <a href="eboard.html" class="dropdown-item active">Meet The Eboard</a>
-                  <a href="membership benefits.html" class="dropdown-item">Membership Benefits</a>
-              </div>
-            </li>
-          <li class="nav-item">
-              <a class="nav-link" href="donate.html">Donate</a>
+            <a class="navbar-brand" href="#home">
+              <img src="img/alpfalogo.png" width="80" height="80" alt="">
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="FAQ.html">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="FAQ.html">FAQ</a>
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="members.html">Members</a>
+         </li>
+         <li class="nav-item">
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger navbar-btn" role="button">Join Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="events.html">Events</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="members.html">Members</a>
-       </li>
-       <li class="nav-item">
-       <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class="btn btn-danger navbar-btn" role="button">Join Us</a>
-       </li>
-          </ul>
+            </ul>
+            <!-- End of NavBar Items -->
+          </div>
         </div>
-      </div>
-  </nav>
-
+    </nav>
 
  <!--Executive Board -->
 <section id="authors" class="text-center">
   <div class="container-fixed">
         <div class="info-header mb-3 text-white red py-4">
-          <h1 style="font-family:Bebas-Neue;font-size:80px">Meet The Eboard of 2020-2021</h1>
+          <h1 style="font-size:50px">Meet The Eboard of 2020-2021</h1>
         </div>
 
 
@@ -368,7 +370,7 @@
 </section>
 
 <!-- Footer -->
-<footer id="main-footer" class="bg-dark text-white pt-4 mt-5">
+<footer id="main-footer" class="blue text-white pt-4 mt-5">
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
