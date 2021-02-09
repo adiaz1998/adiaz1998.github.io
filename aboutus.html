@@ -25,21 +25,67 @@
 </head>
 
 <body>
-  <div class="header"> 
-    <div class="container"> 
-    <nav class=" aboutNav navbar navbar-expand-sm ">
-      <div class="container ">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+  <!---  BEGINNGIN OF SMALL NAV-->
+
+  <nav class="otherNav navbar d-md-block d-lg-none bg-light navbar-light " >
+    <a class="navbar-brand" href="#home">
+      <img src="img/alpfalogo.png" width="80" height="80" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+      <span class="navbar-toggler-icon" onclick="openNav()"></span>
+    </button>
+    </div>
+  </nav>
+<!-- END OF SMALL NAV -->
+
+  <div id="smallNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      
+      <a class="navbar-brand" href="#home">
+        <img src="img/alpfalogo.png" width="80" height="80" alt="">
+      </a>
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="donate.html">Donate</a>
+      <a class="nav-link" href="FAQ.html">FAQ</a>
+      <a class="nav-link" href="events.html">Events</a>
+      <a class="nav-link" href="members.html">Members</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSed4d3R22VXy037VaYtzMPT_g0AGm_MzqhnMyi0-2X50Ln0bg/viewform?usp=sf_link" class=" navbar-link"  role="button">
+        Join Us
+      </a>  
+    </div>
+  
+  </div>
+
+  
+
+
+
+
+
+   
+
+
+  <!-- NavBar -->
+    <nav class=" d-none d-lg-block  navbar navbar-expand-lg ">
+      <div class="container">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="true">
+            <span class="fa fa-bars"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarCollapse">
+          <img class=" d-md-block d-sm-block d-lg-none" src="img/alpfalogo.png" width="80" height="80" alt="">
+
+          <div class="otherNav collapse navbar-collapse text-center" id="navbarCollapse">
           <!-- NavBar Items -->
             <ul class="navbar-nav mx-auto ">
               <li class="nav-item">
                   <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >
                   About Us</a>
                 <div class="dropdown-menu">
                     <a href="aboutus.html" class="dropdown-item">Mission Statement</a>
@@ -69,9 +115,8 @@
             <!-- End of NavBar Items -->
           </div>
         </div>
-      
-    </nav>
-  </div>
+      </nav>
+   
 
  <!-- PAGE HEADER -->
  <section class="red text-light text-center">
@@ -299,7 +344,17 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
-  </script>
-</body>
+
+
+    /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("smallNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("smallNav").style.width = "0%";
+}
+</script>
 
 </html>

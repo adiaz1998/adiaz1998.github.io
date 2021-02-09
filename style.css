@@ -2,6 +2,7 @@
 Removes white gap between slides
 */
 
+
 .carousel-item {
   height: 80vh;
   min-height: 350px;
